@@ -13,79 +13,68 @@
 
 <body>
   <header class="header">
-    <nav>
-      <ul class="nav-list">
+    <nav aria-label="Primary Navigation"> <ul class="nav-list">
         <li><a href="#skills">Skills</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#education">Education</a></li>
       </ul>
-
     </nav>
-
   </header>
+
   <main class="main">
     <div class="container">
       <div class="hero-section">
-        <h4>Hello, I'm </h4>
-        <h1>Chaitali Deore</h1>
-        <h3>Fullstack Developer</h3>
-        <div class="hero-btn-container">
-          <button class="hero-button btn-filled">Hire Me</button>
+        <p class="hero-intro">Hello, I'm</p> <h1>Chaitali Deore</h1>
+        <h2>Fullstack Developer</h2> <div class="hero-btn-container">
+          <button class="hero-button btn-filled" aria-label="Open contact form to hire me">Hire Me</button>
           <button id="viewworkbtn" class="hero-button btn-outline">View Work</button>
         </div>
-
       </div>
       <div class="hero-image-container">
-        
         <img src="./assest/chaitali_profile.jpeg" width="400" height="400" fetchpriority="high" alt="Chaitali Deore" class="hero-image">
       </div>
     </div>
+
     <section id="skills" class="section">
       <div class="container section-flex">
         <h2 class="section-title">Technical Skills</h2>
-        <div class="skills-grid" id="skills-container">
-        </div>
+        <div class="skills-grid" id="skills-container"></div>
       </div>
     </section>
 
     <section id="experience" class="section">
       <div class="container section-flex">
         <h2 class="section-title">Experience</h2>
-        <div class="experience-grid" id="experience-container">
-        </div>
+        <div class="experience-grid" id="experience-container"></div>
       </div>
     </section>
 
     <section id="education" class="section">
       <div class="container section-flex">
         <h2 class="section-title">Education</h2>
-        <div class="education-grid" id="education-container">
-        </div>
+        <div class="education-grid" id="education-container"></div>
       </div>
     </section>
 
     <section id="projects" class="section">
       <div class="container section-flex">
         <h2 class="section-title">View My Work On GitHub</h2>
-        <div class="project-grid" id="projects-container">
-        </div>
+        <div class="project-grid" id="projects-container"></div>
       </div>
     </section>
 
     <section id="contact" class="section">
       <div class="container">
-
-        <div id="contact-section" style="display: none; margin-top: 40px;">
+        <div id="contact-section" style="display: none; margin-top: 40px;" aria-live="polite">
           <h2 class="section-title">Hire Me</h2>
 
           <div class="contact-card">
             <div class="contact-info">
               <h3>Let's Work Together</h3>
-              <p>I'm currently available for freelance work or full-time positions. If you have a project that needs a
-                passionate Fullstack Developer, let's chat!</p>
+              <p>I'm currently available for freelance work or full-time positions.</p>
               <ul class="contact-details">
                 <li><strong>Location:</strong> Stockholm, Sweden</li>
-                <li><strong>Email:</strong> chaitalideore@gmail.com</li>
+                <li><strong>Email:</strong> <a href="mailto:chaitalideore@gmail.com">chaitalideore@gmail.com</a></li>
               </ul>
             </div>
 
@@ -106,8 +95,7 @@
               </div>
               <div class="form-group">
                 <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" placeholder="Tell me about your project details..."
-                  required></textarea>
+                <textarea id="message" name="message" rows="5" placeholder="Tell me about your project details..." required></textarea>
               </div>
               <button type="submit" class="hero-button btn-filled">Send Inquiry</button>
             </form>
@@ -118,9 +106,7 @@
   </main>
 
   <footer class="footer">
-
     <p>&copy; 2026 Chaitali Deore | All rights reserved.</p>
-
   </footer>
 </body>
 
