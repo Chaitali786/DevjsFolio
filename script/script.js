@@ -283,13 +283,20 @@ document.addEventListener("DOMContentLoaded", () => {
   if (hireBtn && contactSection) {
     hireBtn.addEventListener("click", (e) => {
       e.preventDefault();
-
       contactSection.style.display = "block";
-
       setTimeout(() => {
         contactSection.classList.add("show");
         contactSection.scrollIntoView({ behavior: "smooth" });
       }, 10);
+    });
+  }
+
+  const hireForm = document.getElementById("hire-form");
+  if (hireForm) {
+    hireForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      alert("Thanks for reaching out .");
+      hireForm.reset();
     });
   }
 });
